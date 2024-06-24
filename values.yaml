@@ -10,7 +10,7 @@ global:
 
   spinDeck:
     protocol: http # Set to https if global.certManager and global.ssl is true
-    host: 4031isd.training.opsmx.net   # Replace the Spinnaker URL
+    host: ISDHelm.hyd-dev.opsmx.net   # Replace the Spinnaker URL
 
   # Set to true if you are using the saml/Okta for Spinnaker
   auth:
@@ -57,9 +57,9 @@ spinnaker:
       type: git # git, s3, stash(bitbucket server) use a different sample values file for s3/bitbuck-stash
       ## Git repo details, https://<baseUrlHostName>/<organization>/<repository>
       organization: NaveenBalagouni
-      repository: Isd-Installation # repo name for GitOps Halyard, will be created if "githubcreationHook" is set to true
+      repository: Isdin-HELM # repo name for GitOps Halyard, will be created if "githubcreationHook" is set to true
       username: NaveenBalagouni  # Username to authenticate with git/stash repo
-      dynamicAccRepository: Isd-Installation # Repo name of the GitOps Dynamic Accounts Directory, Can be same as "repository"
+      dynamicAccRepository: Isdin-HELM # Repo name of the GitOps Dynamic Accounts Directory, Can be same as "repository"
 
       ########################################################################################
       ## Additional git-repo parameters, typically no need to be change
